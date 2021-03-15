@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  color: #393e46;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: #00adb5;
+  font-weight: 600;
+}
+
+nav{
+  background-color: #222831;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+nav a{
+  padding: 0 25px;
+  color: #00adb5;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+h2, h5{
+  text-align: center;
+  color: #222831;
+}
+
+th{
+  padding: 4px 30px;
+  font-size: 20px;
+}
+
+td{
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+tr:nth-child(even) 
+{
+  background: #CCC
+}
+
+tr:nth-child(odd) 
+{
+  background: #FFF
+}
+
+tr{
+  text-align: center;
+}
+
+tr th{
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+table, form{
+  margin: 0 auto;
+  width: 50%;
+}
+
+label{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+select{
+  color: #222831;
+}
+
+button{
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #810000;
+}
+
+button:hover{
+  border: 2px solid #222831;
+  background: #810000;
+  color: #eeeeee;
+}
+
+button:active{
+  border: 2px solid #810000;
+  background: #eeeeee;
+  color: #222831;
+}
+
+.submit-btn{
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#tickets{
+  background-color: #222831;
+  padding: 20px 0;
+  margin: 20px 0 10px 0;
+}
+
+#tickets h2, h5{
+  color: #eeeeee;
+}
+
+#destinations {
+  background-color: #eeeeee;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+#noDest{
+  color: #222831;
+}
+
+#ticket-a
+{
+  display: block;  
+  text-align: center;
+  padding: 20px 0 30px 0;
+  font-size: 20px;
+}

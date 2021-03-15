@@ -1,0 +1,32 @@
+<%- include('../partials/header') %>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Airline</th>
+                <th>Airport</th>
+                <th>#</th>
+                <th>Departs</th>
+                <th> </th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% flights.forEach(function(f){ %>
+                <tr>
+                    <td><%= f.airline %></td>
+                    <td><%= f.airport %></td>
+                    <td><%= f.flightNo %></td>
+                    <td><%= f.departs.toISOString().slice(0, 16).replace('T', ' - ') %></td>
+                    <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+                    <td>
+                        <form action="/flights/<%= f._id %>?_method=DELETE" method="POST">
+                            <button type="submit">X</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <%- include('../partials/footer') %>
